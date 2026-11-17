@@ -109,6 +109,7 @@ h2 {
 .log-entry li {
     margin: 4px 0;
 }
+
 .log-entry li.strike {
     position: relative;
     width: fit-content;
@@ -130,6 +131,7 @@ h2 {
 .log-entry li.strike:hover::after {
     width: 100%;
 }
+
 .log-entry li.power {
     margin: 8px 0;
     padding: 4px 10px;
@@ -142,6 +144,7 @@ h2 {
     list-style: none;
     width: fit-content;
 }
+
 body .thanks {
     margin-top: 20px;
     font-size: 11px;
