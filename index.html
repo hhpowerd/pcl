@@ -1,7 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MC_LACH 下载</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,14 +11,64 @@
 <body>
     <div class="container">
         <h1>MC_LACH 下载</h1>
-        <p>我编写的启动器,只能加入我的服务器,感谢</p>
+        <p>我编写的启动器，只能加入我的服务器，感谢。</p>
 
-        <a href="https://adminxie.lanzouv.com/ioAKv4g849gd" class="download-button">LINKSTART!!!密码是cipb</a>
+        <a id="download" class="download-button" href="https://adminxie.lanzouv.com/ioAKv4g849gd" target="_blank"
+            rel="noopener">LINKSTART!!! 密码是 9178</a>
 
-        <p>Bulid time: 2026-11-16 22:32:43</p>
-        <h2>Build version: 1.5.2</h2>
-        <h3>HASH: 9A92B0F0803839B0E3D1F77E9706451966CFA66501AE6E9773B1A8EAD0E75041</h3>
+        <p class="meta">Build time: 2026-11-16 22:32:43</p>
+        <p class="meta">Build version: 1.5.2</p>
+        <p class="meta">SHA256: <code id="hash">9A92B0F0803839B0E3D1F77E9706451966CFA66501AE6E9773B1A8EAD0E75041</code>
+        </p>
+
+        <h2>更新日志</h2>
+
+        <div class="log-entry">
+            <h3>1.5.2 <span class="date">2026-11-16 22:32:43</span></h3>
+            <ul>
+                <li>修复部分环境下启动后无法连接服务器的问题</li>
+                <li>更新下载地址（两个地址任选其一，密码均为 9178）</li>
+                <li>C#构建成功</li>
+            </ul>
+        </div>
+
+        <div class="log-entry">
+            <h3>1.3.1 <span class="date">2026-11-16 20:21:01</span></h3>
+            <ul>
+                <li>自动分配内存</li>
+                <li class="strike">添加服务器与进程限制</li>
+                <li>现在是2分之一概率!!!!!!!</li>
+            </ul>
+        </div>
+
+        <div class="log-entry">
+            <h3>1.0.0 <span class="date">2026-11-16 18:58:32</span></h3>
+            <ul>
+                <li>新增自动校验客户端完整性</li>
+                <li>整合 Java 运行环境，无需额外安装</li>
+                <li>完善逻辑</li>
+            </ul>
+        </div>
     </div>
+
+    <script>
+        (function () {
+            var sources = [
+                {
+                    url: 'https://adminxie.lanzouv.com/ioAKv4g849gd',
+                    hash: '9A92B0F0803839B0E3D1F77E9706451966CFA66501AE6E9773B1A8EAD0E75041'
+                },
+                {
+                    url: 'https://adminxie.lanzouv.com/iDqNM4gb8eih',
+                    hash: '851391825F7847216371685999CE78234A91136C54223F233ECBC7C58714400E'
+                }
+            ];
+
+            var pick = sources[Math.floor(Math.random() * sources.length)];
+            document.getElementById('download').href = pick.url;
+            document.getElementById('hash').textContent = pick.hash;
+        })();
+    </script>
 </body>
 
 </html>

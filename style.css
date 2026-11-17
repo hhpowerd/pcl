@@ -1,37 +1,132 @@
+* {
+    box-sizing: border-box;
+}
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-    }
+body {
+    margin: 0;
+    padding: 40px 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+        Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #24292f;
+    background-color: #ffffff;
+}
 
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-    }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-    h1 {
-        color: #333;
-    }
+h1 {
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    font-size: 28px;
+    font-weight: 600;
+    border-bottom: 1px solid #d0d7de;
+}
 
-    p {
-        color: #666;
-    }
+p {
+    margin: 8px 0;
+    color: #57606a;
+}
 
-    .download-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 60;
-    }
-    h2 {
-        color: #8710ff;
-        font-style: italic;
-    }
-    h3 {
-        color: #ff0000;
-        font-style: italic;
-    }
+.download-button {
+    display: inline-block;
+    margin: 16px 0;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1f883d;
+    border: 1px solid rgba(27, 31, 36, 0.15);
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background-color: #1a7f37;
+}
+
+.download-button:focus-visible {
+    outline: 2px solid #0969da;
+    outline-offset: 2px;
+}
+
+.meta {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #57606a;
+}
+
+code {
+    padding: 2px 6px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+    background-color: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    word-break: break-all;
+}
+
+h2 {
+    margin: 32px 0 12px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.log-entry {
+    margin: 0 0 16px;
+    padding: 12px 16px;
+    background-color: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+}
+
+.log-entry h3 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #24292f;
+}
+
+.log-entry .date {
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #57606a;
+}
+
+.log-entry ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #57606a;
+}
+
+.log-entry li {
+    margin: 4px 0;
+}
+.log-entry li.strike {
+    position: relative;
+    width: fit-content;
+    color: #8c959f;
+    transition: color 0.2s ease;
+}
+
+.log-entry li.strike::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1.5px;
+    background-color: currentColor;
+    pointer-events: none;
+}
+
+.log-entry li.strike:hover::after {
+    width: 100%;
+}
