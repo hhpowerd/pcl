@@ -4,30 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MC_LACH 下载</title>
+    <title>MC_启动器 下载</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>MC_LACH 下载</h1>
-        <p>我编写的启动器，只能加入我的服务器，感谢。</p>
+        <h1>INDEX 下载</h1>
 
-        <a id="download" class="download-button" href="https://adminxie.lanzouv.com/ioAKv4g849gd" target="_blank"
+        <a id="download" class="download-button" href="https://adminxie.lanzouv.com/ibBFi4gbhxob" target="_blank"
             rel="noopener">LINKSTART!!! 密码是 9178</a>
 
-        <p class="meta">Build time: 2026-11-16 22:32:43</p>
-        <p class="meta">Build version: 1.5.2</p>
-        <p class="meta">SHA256: <code id="hash">9A92B0F0803839B0E3D1F77E9706451966CFA66501AE6E9773B1A8EAD0E75041</code>
+        <p class="meta">Build time: 2026-11-17 20:31:57</p>
+        <p class="meta">Latest Build version: 1.9.9</p>
+        <p class="meta">SHA256: <code id="hash">FA8EDCC2790A99A52A97FEDFAA573FD99DA48E74A5CD6FDA5E0A5BE83465D880</code>
         </p>
 
         <h2>更新日志</h2>
-
+        <div class="log-entry">
+            <h3>1.9.9 <span class="date">2026-11-17 20:31:57</span></h3>
+            <ul>
+                <li class="power">当 人 民 的 作 者 , 取 消 一 切 限 制</li>
+                <li>是的,启动器限制已经取消</li>
+                <li>有bug班上直接找我,GitHub的issues你们也不会提</li>
+                <li>mod加载器大概周末做</li>
+            </ul>
+        </div>
+        <div class="log-entry">
+            <h3>1.6.3 <span class="date">2026-11-17 20:10:24</span></h3>
+            <ul>
+                <li>添加从CurseForge与Modrinth的下载mod源</li>
+            </ul>
+        </div>
+        <div class="log-entry">
+            <h3>1.6.2 <span class="date">2026-11-17 19:40:12</span></h3>
+            <ul>
+                <li>添加MC实例下载</li>
+                <li>修复在win10环境下闪退的问题</li>
+                <li>添加原版资源区分</li>
+            </ul>
+        </div>
         <div class="log-entry">
             <h3>1.5.2 <span class="date">2026-11-16 22:32:43</span></h3>
             <ul>
                 <li>修复部分环境下启动后无法连接服务器的问题</li>
-                <li>更新下载地址（两个地址任选其一，密码均为 9178）</li>
+                <li class="strike">更新下载地址（两个地址任选其一，密码均为 9178）</li>
                 <li>C#构建成功</li>
             </ul>
         </div>
@@ -37,7 +58,7 @@
             <ul>
                 <li>自动分配内存</li>
                 <li class="strike">添加服务器与进程限制</li>
-                <li>现在是2分之一概率!!!!!!!</li>
+                <li class="strike">现在是2分之一概率!!!!!!!</li>
             </ul>
         </div>
 
@@ -47,10 +68,11 @@
                 <li>新增自动校验客户端完整性</li>
                 <li>整合 Java 运行环境，无需额外安装</li>
                 <li>完善逻辑</li>
+                <li>制作框架</li>
             </ul>
         </div>
     </div>
-
+    <p class="thanks">感谢Copilot SDK提供的GPT6 Luna 制作的GUI界面与GitHub的网页部署</p>
     <script>
         (function () {
             var sources = [
@@ -64,9 +86,9 @@
                 }
             ];
 
-            var pick = sources[Math.floor(Math.random() * sources.length)];
-            document.getElementById('download').href = pick.url;
-            document.getElementById('hash').textContent = pick.hash;
+            //var pick = sources[Math.floor(Math.random() * sources.length)];
+            //document.getElementById('download').href = pick.url;
+            //document.getElementById('hash').textContent = pick.hash;
         })();
     </script>
 </body>
