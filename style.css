@@ -43,7 +43,18 @@ p {
     border-radius: 6px;
     text-decoration: none;
 }
-
+.download-android {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 16px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #0969da;
+    border: 1px solid rgba(27, 31, 36, 0.15);
+    border-radius: 6px;
+    text-decoration: none;
+}
 .download-button:hover {
     background-color: #1a7f37;
 }
@@ -150,4 +161,10 @@ body .thanks {
     font-size: 11px;
     color: #57606a;
     text-align: center;
+}
+body .meta{
+    margin: 0 0 8px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #2f09a1;
 }
